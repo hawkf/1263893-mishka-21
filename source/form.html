@@ -8,7 +8,6 @@
 
 <body class="page-body">
   <header class="page-header">
-    <h1 class="page-header__title">Вязание на заказ</h1>
     <a class="page-header__logo" href="../source/index.html">
       <img src="href=https://via.placeholder.com/150x150" width="85" height="34" alt="Логотип сайта">
     </a>
@@ -33,7 +32,7 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Форма заказа</h1>
+    <h1 class="page-main__title">Вязание на заказ</h1>
     <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
       мы свяжемся с вами, чтобы уточнить детали.</p>
     <form class="page-main__product-form product-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -53,7 +52,7 @@
       </fieldset>
       <fieldset class="product-form__color">
         <legend class="product-form__fields-name">Цвет</legend>
-        <ul class="product-form_color-list color-list">
+        <ul class="product-form__color-list color-list">
           <li class="color-list__item">
             <input type="checkbox" name="white" id="filter-white" checked>
             <label for="filter-white">Белый</label>
@@ -82,23 +81,16 @@
       </fieldset>
       <fieldset class="product-form__full-name">
         <legend class="product-form__fields-name">ФИО</legend>
-        <div class="product-form__full-name-field">
-          <label for="filter-full-name">Имя:</label>
-          <input type="text" name="full-name" id="filter-full-name" placeholder="Введите ваше имя*">
-        </div>
-      </fieldset>
-      <fieldset class="product-form__full-name">
-        <legend class="product-form__fields-name">ФИО</legend>
         <ul class="product-form__full-name-list">
-          <li class="ull-name-list__item">
+          <li class="full-name-list__item">
             <label for="filter-name">Имя:</label>
             <input type="text" name="name" id="filter-name" required placeholder="Введите ваше имя*">
           </li>
-          <li class="ull-name-list__item">
+          <li class="full-name-list__item">
             <label for="filter-surname">Фамилия:</label>
             <input type="text" name="surname" id="filter-surname" required placeholder="Укажите фамилию*">
           </li>
-          <li class="ull-name-list__item">
+          <li class="full-name-list__item">
             <label for="filter-patronymic">Отчество:</label>
             <input type="text" name="patronymic" id="filter-patronymic" placeholder="Отчество, если желаете">
           </li>
@@ -115,7 +107,7 @@
         <legend class="product-form__fields-name">E-mail</legend>
         <div class="product-form__email-adress">
           <label for="filter-email"></label>
-          <input type="tel" name="email" id="filter-email" required placeholder="Ваш Email*">
+          <input type="email" name="email" id="filter-email" required placeholder="Ваш Email*">
         </div>
       </fieldset>
       <fieldset class="product-form__additionally">
@@ -127,7 +119,7 @@
       </fieldset>
       <small class="product-form__legend">*Поля обязательны для заполнения</small>
       <div class="product-form__button">
-      <input class="button" type="submit" value="Отправить заказ">
+      <button class="button" type="submit">Отправить заказ</button>
     </div>
     </form>
   </main>
