@@ -9,7 +9,7 @@
 <body class="page-body">
   <header class="page-header">
     <a class="page-header__logo" href="../source/index.html">
-      <img src="href=https://via.placeholder.com/150x150" width="85" height="34" alt="Логотип сайта">
+      <img src="https://via.placeholder.com/150x150" width="85" height="34" alt="Логотип сайта">
     </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -33,40 +33,46 @@
   </header>
   <main class="page-main">
     <h1 class="page-main__title">Каталог товаров</h1>
-    <ul class="page-main__catalog-list catalog-list">
-      <li class="catalog-list__item">
-        <img class="catalog-list__item-image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Фото товара">
-        <div class="catalog-list__item-parameters">
-        <p class="catalog-list__item-name">Зайчик-попрыгайчик</p>
-        <p class="catalog-list__item-description">Рост 30 см, вес 200 г</p>
-      </div>
-      <p class="catalog-list__item-price">690 руб.</p>
-      </li>
-      <li class="catalog-list__item">
-        <img class="catalog-list__item-image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Фото товара">
-        <div class="catalog-list__item-parameters">
-        <p class="catalog-list__item-name">Корзинка для белья</p>
-        <p class="catalog-list__item-description">Диаметр 15 см, высота 10 см</p>
-      </div>
-      <p class="catalog-list__item-price">690 руб.</p>
-      </li>
-      <li class="catalog-list__item">
-        <img class="catalog-list__item-image" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Фото товара">
-        <div class="catalog-list__item-parameters">
-        <p class="catalog-list__item-name">Большая корзинка для игрушек</p>
-        <p class="catalog-list__item-description">Диаметр 30 см, высота 30 см</p>
-      </div>
-      <p class="catalog-list__item-price">1 500 руб.</p>
-      </li>
-    </ul>
-    <section class="production-process">
-       <h2 class="production-process__title">Процесс производства</h2>
-       <img class="production-process__video" src="https://via.placeholder.com/150x150" width="269" height="195" alt="Видео производства товара">
-       <button class="production-process__start_video_button button_start_video_button">Старт видео</button>
-       <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-
-    </section>
-
+    <div class="page-main__wrapper">
+      <ul class="page-main__catalog-list catalog-list">
+        <li class="catalog-list__item">
+          <img class="catalog-list__item-image" src="https://via.placeholder.com/150x150" width="260" height="195"
+            alt="Фото товара">
+          <div class="catalog-list__item-parameters">
+            <p class="catalog-list__item-name">Зайчик-попрыгайчик</p>
+            <p class="catalog-list__item-description">Рост 30 см, вес 200 г</p>
+          </div>
+          <p class="catalog-list__item-price">690 руб.</p>
+        </li>
+        <li class="catalog-list__item">
+          <img class="catalog-list__item-image" src="https://via.placeholder.com/150x150" width="260" height="195"
+            alt="Фото товара">
+          <div class="catalog-list__item-parameters">
+            <p class="catalog-list__item-name">Корзинка для белья</p>
+            <p class="catalog-list__item-description">Диаметр 15 см, высота 10 см</p>
+          </div>
+          <p class="catalog-list__item-price">690 руб.</p>
+        </li>
+        <li class="catalog-list__item">
+          <img class="catalog-list__item-image" src="https://via.placeholder.com/150x150" width="260" height="195"
+            alt="Фото товара">
+          <div class="catalog-list__item-parameters">
+            <p class="catalog-list__item-name">Большая корзинка для игрушек</p>
+            <p class="catalog-list__item-description">Диаметр 30 см, высота 30 см</p>
+          </div>
+          <p class="catalog-list__item-price">1 500 руб.</p>
+        </li>
+      </ul>
+      <section class="production-process">
+        <h2 class="production-process__title">Процесс производства</h2>
+        <img class="production-process__video" src="https://via.placeholder.com/150x150" width="269" height="195"
+          alt="Видео производства товара">
+        <button class="production-process__start_video_button button_start_video_button">Старт видео</button>
+        <p class="production-process__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+          о том, как появляются наши товары.</p>
+        <button class="production-process__button button">Сделать заказ</button>
+      </section>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
@@ -100,8 +106,8 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link">
-          <svg aria-label="Логотип разаработчиков сайта" width="27" height="35"
-            viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg aria-label="Логотип разаработчиков сайта" width="27" height="35" viewBox="0 0 27 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
               fill="#63D1BB" />
