@@ -9,11 +9,7 @@
 <body class="page-body">
   <header class="page-header">
     <a class="page-header__logo" href="../source/index.html">
-<<<<<<< HEAD:source/index.html
-      <img src="https://via.placeholder.com/150x150" width="85" height="34" alt="Логотип сайта">
-=======
       <img src="href=https://via.placeholder.com/150x150" width="85" height="34" alt="Логотип сайта">
->>>>>>> master:source/form.html
     </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -36,141 +32,21 @@
     </nav>
   </header>
   <main class="page-main">
-<<<<<<< HEAD:source/index.html
-    <h1 class="page-main__title">Милые штуки ручной работы для дома</h1>
-    <ul class="page-main__products-list products-list">
-      <li class="products-list__item">
-        <a href="#">Предметы интерьера</a>
+    <h1 class="page-main__title">Каталог товаров</h1>
+    <ul class="page-main__catalog-list catalog-list">
+      <li class="catalog-list__item">
+        <img class="catalog-list__item-image" src="https://via.placeholder.com/150x150" width="260" height="195">
+        <div class="catalog-list__item-parameters">
+        <p class="catalog-list__item-name">Зайчик-попрыгайчик</p>
+        <p class="catalog-list__item-description">Рост 30 см, вес 200 г</p>
+      </div>
+      <p class="catalog-list__item-price">690 руб.</p>
       </li>
       <li class="products-list__item">
         <a href="#">Детские игрушки</a>
       </li>
     </ul>
-    <section class="product-week">
-      <div class="product-week__wrapper">
-        <h2 class="product-week__title">Вязаные корзинки</h2>
-        <p class="product-week__type">Товар недели</p>
-        <p class="product-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
-          трех размерах.</p>
-        <table class="product-week__specification-table specification-table">
-          <tr class="specification-table__item">
-            <th class="specification-table__item-parameter">Цвет:</th>
-            <td class="specification-table__item-value">«Тиффани»/серый</td>
-          </tr>
-          <tr class="specification-table__item">
-            <th class="specification-table__item-parameter">Диаметр:</th>
-            <td class="specification-table__item-value">25 см</td>
-          </tr>
-          <tr class="specification-table__item">
-            <th class="specification-table__item-parameter">Высота:</th>
-            <td class="specification-table__item-value">15 см</td>
-          </tr>
-        </table>
-        <img class="specification-product-week__image" src="https://via.placeholder.com/150x150" width="260"
-              height="315" alt="Фото товара недели">
-        <p class="product-week__price price">Цена: 990 руб.</p>
-        <button class="product-week__button button">Заказать</button>
-      </div>
-    </section>
-    <section class="advantages">
-      <h2 class="vusially-hidden">Наши преимущества</h2>
-      <div class="advantages__wrapper">
-        <h3 class="advantages__title">Коротко о нас:</h3>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--ecology">
-            Экологически чистые материалы
-=======
-    <h1 class="page-main__title">Вязание на заказ</h1>
-    <p class="page-main__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
-      мы свяжемся с вами, чтобы уточнить детали.</p>
-    <form class="page-main__product-form product-form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="product-form__type">
-        <legend class="product-form__fields-name">Тип</legend>
-        <ul class="product-form_type-list type-list">
-          <li class="type-list__item">
-            <input type="radio" name="product-type" id="filter-interior-accessories" value="interior-accessories"
-              checked>
-            <label for="filter-interior-accessories">Аксессуар для интерьера</label>
-          </li>
-          <li class="type-list__item">
-            <input type="radio" name="product-type" id="filter-kids-toy" value="kids-toy">
-            <label for="filter-kids-toy">Детская игрушка</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="product-form__color">
-        <legend class="product-form__fields-name">Цвет</legend>
-        <ul class="product-form__color-list color-list">
-          <li class="color-list__item">
-            <input type="checkbox" name="white" id="filter-white" checked>
-            <label for="filter-white">Белый</label>
-          </li>
-          <li class="color-list__item">
-            <input type="checkbox" name="grey" id="filter-grey" checked>
-            <label for="filter-grey">Серый</label>
-          </li>
-          <li class="color-list__item">
-            <input type="checkbox" name="tifany" id="filter-tifany">
-            <label for="filter-tifany">«Тиффани»</label>
->>>>>>> master:source/form.html
-          </li>
-          <li class="color-list__item">
-            <input type="checkbox" name="black" id="filter-black">
-            <label for="filter-black">Черный</label>
-          </li>
-          <li class="color-list__item">
-            <input type="checkbox" name="pink" id="filter-pink">
-            <label for="filter-pink">Розовый</label>
-          </li>
-          <li class="color-list__item">
-            <input type="checkbox" name="orange" id="filter-orange">
-            <label for="filter-orange">Оранжевый</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="product-form__full-name">
-        <legend class="product-form__fields-name">ФИО</legend>
-        <ul class="product-form__full-name-list full-name-list">
-          <li class="full-name-list__item">
-            <label for="filter-name">Имя:</label>
-            <input type="text" name="name" id="filter-name" required placeholder="Введите ваше имя*">
-          </li>
-          <li class="full-name-list__item">
-            <label for="filter-surname">Фамилия:</label>
-            <input type="text" name="surname" id="filter-surname" required placeholder="Укажите фамилию*">
-          </li>
-          <li class="full-name-list__item">
-            <label for="filter-patronymic">Отчество:</label>
-            <input type="text" name="patronymic" id="filter-patronymic" placeholder="Отчество, если желаете">
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="product-form__telephone">
-        <legend class="product-form__fields-name">Тел</legend>
-        <div class="product-form__telephone-number">
-          <label for="filter-phone-number"></label>
-          <input type="tel" name="phone-number" id="filter-phone-number" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-        </div>
-      </fieldset>
-      <fieldset class="product-form__email">
-        <legend class="product-form__fields-name">E-mail</legend>
-        <div class="product-form__email-adress">
-          <label for="filter-email"></label>
-          <input type="email" name="email" id="filter-email" required placeholder="Ваш Email*">
-        </div>
-      </fieldset>
-      <fieldset class="product-form__additionally">
-        <legend class="product-form__fields-name">Доп</legend>
-        <div class="product-form__additionally-information">
-          <textarea name="additionally-information" id="filter-additionally-information">
-          </textarea>
-        </div>
-      </fieldset>
-      <small class="product-form__legend">*Поля обязательны для заполнения</small>
-      <div class="product-form__button">
-      <button class="button" type="submit">Отправить заказ</button>
-    </div>
-    </form>
+
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
