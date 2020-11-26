@@ -1,0 +1,21 @@
+@import 'variables';
+
+.contacts__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__email {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 30px;
+  color: $light-black;
+}
+
+.contacts__adress {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 30px;
+  color: $light-black;
+}

@@ -1,0 +1,28 @@
+@import 'variables';
+
+.products-list {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.products-list__item {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: $basic-white;
+  }
+
+  &:first-child {
+    background-color: $basic-green;
+  }
+
+  &:last-child {
+    background-color: $darker-green;
+  }
+}

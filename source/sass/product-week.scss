@@ -1,0 +1,30 @@
+@import 'variables';
+
+.product-week {
+
+}
+
+.product-week__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.product-week__type {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  color: $basic-green;
+}
+
+.product-week__description {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 200;
+  color: $light-black;
+}
+
+.specification-product-week__image {
+  width: 260px;
+  height: 315px;
+}
