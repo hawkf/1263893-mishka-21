@@ -1,7 +1,6 @@
-@import 'variables';
-
-.product-week {
-
+.product-week__wrapper {
+  margin: 0 auto;
+  width: min-content;
 }
 
 .product-week__title {
@@ -11,7 +10,7 @@
 }
 
 .product-week__type {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   color: $basic-green;

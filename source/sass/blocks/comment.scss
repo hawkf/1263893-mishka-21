@@ -1,7 +1,10 @@
-@import 'variables';
+.comment__wrapper {
+  width: min-content;
+  margin: 0 auto;
+}
 
 .comment__title {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 25px;
   line-height: 30px;
 }
@@ -13,22 +16,23 @@
 }
 
 .comment__text {
-  font-weight: 200;
+  font-weight: normal;
   font-size: 15px;
   line-height: 30px;
   color: $light-black;
 }
 
 .comment__avtor-name {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 17px;
   line-height: 24px;
 }
 
 .comment__avtor-email {
-  font-weight: 200;
+  font-weight: normal;
   font-size: 17px;
   line-height: 30px;
+  text-decoration: none;
 }
 
 .comment__button-text {

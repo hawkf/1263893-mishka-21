@@ -1,13 +1,11 @@
-@import 'variables';
-
 .products-list {
-   margin: 0;
-   padding: 0;
-   list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .products-list__item {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   padding: 0;
@@ -18,11 +16,11 @@
     color: $basic-white;
   }
 
-  &:first-child {
+  &--first-botton a {
     background-color: $basic-green;
   }
 
-  &:last-child {
+  &--second-botton a {
     background-color: $darker-green;
   }
 }
