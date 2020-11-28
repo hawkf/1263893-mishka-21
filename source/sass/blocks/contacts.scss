@@ -1,0 +1,33 @@
+.contacts__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__email a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $light-black;
+  text-decoration: none;
+  border-bottom: 1px solid $mail-link;
+  width: min-content;
+}
+
+.contacts__adress {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 30px;
+  color: $light-black;
+}
+
+.contacts__map {
+  background-color: $light-grey;
+  width: 320px;
+  height: 454px;
+}

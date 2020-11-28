@@ -1,0 +1,30 @@
+.product-week__wrapper {
+  margin: 0 auto;
+  width: min-content;
+}
+
+.product-week__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.product-week__type {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $basic-green;
+  text-transform: uppercase;
+}
+
+.product-week__description {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: normal;
+  color: $light-black;
+}
+
+.product-week__image {
+  width: 260px;
+  height: 315px;
+}
