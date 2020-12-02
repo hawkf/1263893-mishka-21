@@ -1,0 +1,29 @@
+.page-main__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.page-main__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("../../img/hero-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 373px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/hero-tablet.png");
+    width: 670px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/hero-desktop.png");
+    width: 1050px;
+  }
+}

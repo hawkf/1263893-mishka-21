@@ -1,10 +1,12 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/visually-hidden.scss";
-@import "blocks/page-body.scss";
+@import "global/page";
+@import "global/page-body";
+@import "blocks/page-header";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
-@import "blocks/page-main.scss";
+@import "global/page-main";
 @import "blocks/products-list.scss";
 @import "blocks/product-week";
 @import "blocks/specification-table";
