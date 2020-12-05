@@ -1,0 +1,26 @@
+.color-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.color-list__item {
+  @media (min-width: $tablet-width) {
+    &:nth-of-type(even) {
+      grid-column: 2/3;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-of-type(even) {
+      grid-column: auto;
+    }
+  }
+}
