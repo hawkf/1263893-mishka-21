@@ -13,6 +13,7 @@
 
 .catalog-list__item {
   margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
