@@ -31,3 +31,18 @@
 .page-main__wrapper-form {
   background-color: $light-grey;
 }
+
+.page-main__catalog-list-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
