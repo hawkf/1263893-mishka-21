@@ -215,7 +215,7 @@
   <section class="product-week">
     <div class="product-week__wrapper">
       <h2 class="product-week__title">Вязаные корзинки</h2>
-      <p class="product-week__type">Товар недели</p>
+      <p class="product-week__type">Товар <br>недели</p>
       <p class="product-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и
         трех размерах.</p>
       <table class="product-week__specification-table specification-table">
@@ -232,8 +232,13 @@
           <td class="specification-table__item-value">15 см</td>
         </tr>
       </table>
-      <img class="product-week__image" src="/img/triple-set-mobile1.png" width="260" height="315"
-           alt="Фото товара недели">
+      <div class="product-week__image">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.png 1x, img/triple-set-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet.png 1x, img/triple-set-tablet@2x.png 2x">
+          <img src="img/triple-set-mobile.png" srcset="img/triple-set-mobile@2x.png 2x" alt="Фото товара недели">
+        </picture>
+      </div>
       <p class="product-week__price price">Цена: 990 руб.</p>
       <button class="product-week__button button">Заказать</button>
     </div>

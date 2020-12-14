@@ -46,6 +46,13 @@
 
     &:hover {
       opacity: 0.6;
+
+      .site-list__search-icon,
+      .site-list__cart-icon {
+        path {
+          fill: green;
+        }
+      }
     }
 
     &:active {
@@ -137,6 +144,16 @@
     &:nth-child(2) {
       grid-column: 2/3;
       grid-row: 1/2;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        border-left: 1px solid $black-light;
+        top: 0;
+        bottom: 0;
+        left: -25px;
+      }
 
       a {
         position: static;
@@ -210,18 +227,13 @@
 .site-list__cart-icon {
   position: absolute;
   left: -43px;
-
-  path {
-    fill: $basic-black;
-    opacity: 0.2;
-  }
+  fill: $basic-black;
+  opacity: 0.2;
 }
 
 .site-list__search-icon {
   width: 18px;
   height: 18px;
-  fill: $basic-green;
-
 
   @media (min-width: $tablet-width) {
     top: 36px;

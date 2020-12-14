@@ -4,7 +4,7 @@
   font-family: $font, "Arial", sans-serif;
   font-size: 27px;
   line-height: 30px;
-  margin-bottom: 120px;
+  margin-bottom: 118px;
 
   @media (min-width: $tablet-width) {
     br:first-child {
@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 55px;
+  padding-top: 54px;
   background-image: url("../../img/hero-mobile.png");
   background-repeat: no-repeat;
   background-position: 50% -20px;
@@ -40,12 +40,32 @@
     padding-top: 126px;
     background-image: url("../../img/hero-tablet.png");
     background-position: 50%;
+
+    &::after {
+      position: absolute;
+      bottom: -12px;
+      right: 0;
+      left: 0;
+      content: "";
+      height: 24px;
+      background-image: url("../../img/zigzag-fill-tablet.svg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../../img/hero-desktop.png");
     background-position: 50% 0;
     padding-top: 120px;
+
+    &::after {
+      position: absolute;
+      bottom: -17px;
+      right: 0;
+      left: 0;
+      content: "";
+      height: 34px;
+      background-image: url("../../img/zigzag-fill-desktop.svg");
+    }
   }
 }
 
