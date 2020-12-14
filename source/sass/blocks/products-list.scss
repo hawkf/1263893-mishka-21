@@ -47,9 +47,7 @@
       background-color: $hover-green;
 
       .products-list__interior {
-        g {
-          opacity: 0.7;
-        }
+        opacity: 0.7;
       }
     }
 
@@ -117,10 +115,7 @@
   width: 40px;
   height: 62px;
   padding-right: 36px;
-
-  g {
-    opacity: 0.5;
-  }
+  opacity: 0.5;
 }
 
 .products-list__toy {
