@@ -46,7 +46,8 @@
       height: 108px;
       background-color: $hover-green;
 
-      .products-list__interior {
+      .products-list__interior,
+      .products-list__toy {
         opacity: 0.7;
       }
     }
@@ -54,10 +55,8 @@
     &:active {
       height: 103px;
       background-color: $hover-green;
-    }
 
-    .products-list__interior {
-      g {
+      .products-list__interior {
         opacity: 0.3;
       }
     }
@@ -65,15 +64,24 @@
 
   &--second-botton a {
     background-color: $darker-green;
+    height: 103px;
 
     &:hover,
     &:focus {
       height: 108px;
       background-color: $hover-darker-green;
+
+      .products-list__toy {
+        opacity: 0.7;
+      }
     }
 
     &:active {
       height: 103px;
+
+      .products-list__toy {
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -122,6 +130,8 @@
   width: 60px;
   height: 60px;
   padding-right: 30px;
+  opacity: 0.5;
+  fill: $toy-green;
 
   @media (min-width: $desktop-width) {
     padding-right: 35px;

@@ -1,19 +1,24 @@
-.product-week::after {
-  position: absolute;
-  button: 0;
-  right: 0;
-  left: 0;
-  content: "";
-  height: 6px;
-  background-image: url("../../img/zigzag-line-mobile.svg");
+.product-week {
+  position: relative;
+  z-index: 1;
 
-  @media (min-width: $tablet-width) {
-    height: 17px;
-    background-image: url("../../img/zigzag-line-tablet.svg");
-  }
+  &::after {
+    position: absolute;
+    button: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    height: 6px;
+    background-image: url("../../img/zigzag-line-mobile.svg");
 
-  @media (min-width: $desktop-width) {
-    display: none;
+    @media (min-width: $tablet-width) {
+      height: 17px;
+      background-image: url("../../img/zigzag-line-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 
