@@ -1,3 +1,7 @@
+.contacts {
+  margin-bottom: 55px;
+}
+
 .contacts__wrapper {
   width: 260px;
   margin: 0 auto;
@@ -211,5 +215,10 @@
   @media (min-width: $tablet-width) {
     width: 230px;
     font-size: 17px;
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
