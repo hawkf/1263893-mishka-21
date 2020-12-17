@@ -36,10 +36,6 @@
   font-size: 17px;
   line-height: 24px;
 
-  &--desktop {
-    display: none;
-  }
-
   a {
     display: block;
     text-decoration: none;
@@ -78,10 +74,6 @@
     box-shadow: none;
     padding: 0;
     margin: 0;
-
-    &--desktop {
-      display: none;
-    }
 
     &:first-child {
       grid-column: 1/2;
@@ -269,5 +261,13 @@
 
   @media (min-width: $desktop-width) {
     left: -52px;
+  }
+}
+
+.site-list__item--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
