@@ -61,9 +61,7 @@
 }
 
 .page-header__information {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
+  display: none;
   position: absolute;
   z-index: 5;
   top: 95px;
@@ -72,7 +70,12 @@
   font-size: 15px;
   line-height: 24px;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
   @media (min-width: $desktop-width) {
+    display: block;
     top: 93px;
   }
 }
