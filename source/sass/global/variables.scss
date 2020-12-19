@@ -3,12 +3,23 @@ $font: "Open Sans";
 
 //цвета
 $basic-white: #ffffff;
+$opacity-white: rgba(255, 255, 255, 0.3);
 $basic-black: #000000;
+$black-light: rgba(0, 0, 0, 0.1);
+$black-light-2: rgba(0, 0, 0, 0.2);
 $light-black: #444444;
 $basic-green: #63d1bb;
+$green-light: rgba(99, 209, 187, 0.3);
+$hover-green: #59d5bc;
 $darker-green: #56c3b2;
+$toy-green: #149080;
+$hover-darker-green: #46c1ae;
+$hover-darker-green-min-transperent: rgba(70, 193, 174, 0.1);
 $light-grey: #f1f1f1;
 $mail-link: #62d1ba;
+$site-list-shadow: #ececec;
+$social-border: #e5e5e5;
+
 
 //Viewports
 $tablet-width: 768px;

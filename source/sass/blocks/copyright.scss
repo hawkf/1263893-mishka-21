@@ -1,5 +1,21 @@
 .copyright__text {
+  margin-right: 18px;
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
+}
+
+.copyright__link {
+  fill: $basic-green;
+  padding-top: 9px;
+
+  &:hover,
+  &:focus {
+    fill: $hover-darker-green;
+  }
+
+  &:active {
+    fill: $hover-darker-green;
+    opacity: 0.3;
+  }
 }

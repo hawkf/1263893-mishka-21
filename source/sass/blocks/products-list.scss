@@ -1,7 +1,11 @@
 .products-list {
+  bottom: 0;
+  right: 0;
+  left: 0;
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -10,6 +14,8 @@
 }
 
 .products-list__item {
+  position: relative;
+  height: 103px;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
@@ -17,18 +23,117 @@
   margin: 0;
 
   a {
-    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 103px;
+    padding-left: 30px;
     margin: 0;
-    padding: 0;
     text-decoration: none;
     color: $basic-white;
+    box-sizing: border-box;
   }
 
   &--first-botton a {
     background-color: $basic-green;
+
+    &:hover,
+    &:focus {
+      height: 108px;
+      background-color: $hover-green;
+
+      .products-list__interior,
+      .products-list__toy {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      height: 103px;
+      background-color: $hover-green;
+
+      .products-list__interior {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--second-botton a {
     background-color: $darker-green;
+    height: 103px;
+
+    &:hover,
+    &:focus {
+      height: 108px;
+      background-color: $hover-darker-green;
+
+      .products-list__toy {
+        opacity: 0.7;
+      }
+    }
+
+    &:active {
+      height: 103px;
+
+      .products-list__toy {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .products-list__item {
+    height: 119px;
+
+    a {
+      padding-left: 40px;
+      height: 119px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+
+      &:hover,
+      &:focus {
+        height: 124px;
+      }
+
+      &:active {
+        height: 119px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products-list__item {
+    a {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+.products-list__interior {
+  width: 40px;
+  height: 62px;
+  padding-right: 36px;
+  opacity: 0.5;
+}
+
+.products-list__toy {
+  width: 60px;
+  height: 60px;
+  padding-right: 30px;
+  opacity: 0.5;
+  fill: $toy-green;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 35px;
   }
 }

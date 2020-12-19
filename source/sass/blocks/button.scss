@@ -1,6 +1,4 @@
 .button {
-  width: 260px;
-  height: 52px;
   outline: none;
   background-color: $basic-white;
   border: 2px solid $light-black;
@@ -10,4 +8,13 @@
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
+
+  &:hover {
+    background: linear-gradient(0deg, $light-black, $light-black);
+    color: $basic-white;
+  }
+
+  &:active {
+    color: $opacity-white;
+  }
 }
