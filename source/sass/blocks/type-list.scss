@@ -1,0 +1,130 @@
+.type-list {
+  list-style: none;
+  padding-top: 17px;
+  padding-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 80px;
+    margin: 0;
+  }
+}
+
+.type-list__item {
+  margin-bottom: 24px;
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -60px;
+      top: -10px;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $light-black;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+  }
+
+  input:checked + label::after {
+    content: "";
+    position: absolute;
+    left: -48px;
+    top: 2px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: $mail-link;
+  }
+
+  input:hover + label::before,
+  input:focus + label::before {
+    content: "";
+    position: absolute;
+    left: -60px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $light-black;
+    border-color: $mail-link;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  input:active + label::before {
+    content: "";
+    position: absolute;
+    left: -60px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $light-black;
+    border-color: $black-light-3;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
+  &:first-child {
+    label::before {
+      content: "";
+      position: absolute;
+      left: -60px;
+      top: -4px;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $light-black;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+
+    input:checked + label::after {
+      content: "";
+      position: absolute;
+      left: -48px;
+      top: 8px;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background-color: $mail-link;
+    }
+
+    input:hover + label::before,
+    input:focus + label::before {
+      content: "";
+      position: absolute;
+      left: -60px;
+      top: -4px;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $light-black;
+      border-color: $mail-link;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+
+    input:active + label::before {
+      content: "";
+      position: absolute;
+      left: -60px;
+      top: -4px;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $light-black;
+      border-color: $black-light-3;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+  }
+}

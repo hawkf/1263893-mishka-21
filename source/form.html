@@ -12,9 +12,17 @@
 <header class="page-header">
   <div class="page-header__wrapper">
     <a class="page-header__logo" href="index.html">
-      <img src="img/icons/mishka-logo-mobile.svg" width="85" height="34" alt="Логотип сайта">
+      <svg class="page-header__logo-desktop" width="149" height="72">
+        <use xlink:href="/img/icons/sprite.svg#mishka-logo-desktop"></use>
+      </svg>
+      <svg class="page-header__logo-tablet" width="113" height="45">
+        <use xlink:href="/img/icons/sprite.svg#mishka-logo-tablet"></use>
+      </svg>
+      <svg class="page-header__logo-mobile" width="86" height="35">
+        <use xlink:href="/img/icons/sprite.svg#mishka-logo-mobile"></use>
+      </svg>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -24,10 +32,20 @@
           <a href="form.html">Вязание на заказ</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Поиск по сайту</a>
+          <a class="site-list__search" href="#">
+            <svg class="site-list__search-icon">
+              <use xlink:href="/img/icons/sprite.svg#search"></use>
+            </svg>
+            <span>Поиск по сайту</span>
+          </a>
         </li>
         <li class="site-list__item">
-          <a href="#">Корзина: пока пуста</a>
+          <a class="site-list__cart" href="#">
+            <svg class="site-list__cart-icon">
+              <use xlink:href="/img/icons/sprite.svg#cart"></use>
+            </svg>
+            Корзина: пока пуста
+          </a>
         </li>
         <li class="site-list__item site-list__item--desktop">
           <a href="#">Новые поступления</a>
@@ -42,10 +60,10 @@
 </header>
 <main class="page-main">
   <div class="page-main__wrapper-form">
-    <h1 class="page-main__title">Вязание на заказ</h1>
+    <h1 class="page-main__title-form">Вязание на заказ</h1>
   </div>
   <form class="page-main__product-form product-form" action="https://echo.htmlacademy.ru" method="POST">
-    <div class="product-form__wrapper ">
+    <div class="product-form__wrapper">
       <p class="product-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните
         простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     </div>
@@ -54,7 +72,6 @@
         <legend class="product-form__fields-name">Тип</legend>
         <ul class="product-form_type-list type-list">
           <li class="type-list__item">
-
             <input type="radio" name="product-type" id="filter-interior-accessories" value="interior-accessories" checked>
             <label for="filter-interior-accessories">Аксессуар для интерьера</label>
           </li>
@@ -101,16 +118,16 @@
         <legend class="product-form__fields-name">ФИО</legend>
         <ul class="product-form__full-name-list full-name-list">
           <li class="full-name-list__item">
-            <label for="filter-name">Имя:</label>
-            <input type="text" name="name" id="filter-name" required placeholder="Введите ваше имя*">
+            <label class="full-name-list__item-label" for="filter-name">Имя:</label>
+            <input class="full-name-list__item-input" type="text" name="name" id="filter-name" required placeholder="Введите ваше имя*">
           </li>
           <li class="full-name-list__item">
-            <label for="filter-surname">Фамилия:</label>
-            <input type="text" name="surname" id="filter-surname" required placeholder="Укажите фамилию*">
+            <label class="full-name-list__item-label" for="filter-surname">Фамилия:</label>
+            <input class="full-name-list__item-input" type="text" name="surname" id="filter-surname" required placeholder="Укажите фамилию*">
           </li>
           <li class="full-name-list__item">
-            <label for="filter-patronymic">Отчество:</label>
-            <input type="text" name="patronymic" id="filter-patronymic" placeholder="Отчество, если желаете">
+            <label class="full-name-list__item-label" for="filter-patronymic">Отчество:</label>
+            <input class="full-name-list__item-input" type="text" name="patronymic" id="filter-patronymic" placeholder="Отчество, если желаете">
           </li>
         </ul>
       </fieldset>
@@ -119,17 +136,25 @@
       <fieldset class="product-form__wrapper product-form__telephone">
         <legend class="product-form__fields-name">Тел</legend>
         <div class="product-form__telephone-number">
-          <label for="filter-phone-number"></label>
-          <input type="tel" name="phone-number" id="filter-phone-number" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <input class="product-form__telephone-number-input" type="tel" name="phone-number" id="filter-phone-number" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          <label class="product-form__telephone-number-label" for="filter-phone-number">
+            <svg aria-label="Иконка - письмо" width="25" height="24">
+              <use xlink:href="/img/icons/sprite.svg#phone"></use>
+            </svg>
+          </label>
         </div>
       </fieldset>
     </div>
     <div class="product-form__fields">
       <fieldset class="product-form__wrapper product-form__email">
-        <legend class="product-form__fields-name">E-mail</legend>
+        <legend class="product-form__fields-name">E-<nobr>mail</nobr></legend>
         <div class="product-form__email-adress">
-          <label for="filter-email"></label>
-          <input type="email" name="email" id="filter-email" required placeholder="Ваш Email*">
+          <input class="product-form__email-adress-input" type="email" name="email" id="filter-email" required placeholder="Ваш Email*">
+          <label class="product-form__email-adress-label" for="filter-email">
+            <svg aria-label="Иконка - mail" width="32" height="21">
+              <use xlink:href="/img/icons/sprite.svg#mail"></use>
+            </svg>
+          </label>
         </div>
       </fieldset>
     </div>
@@ -137,16 +162,13 @@
       <fieldset class="product-form__wrapper product-form__additionally">
         <legend class="product-form__fields-name">Доп</legend>
         <div class="product-form__additionally-information">
-                    <textarea name="additionally-information" id="filter-additionally-information">
-          </textarea>
+          <textarea name="additionally-information" id="filter-additionally-information" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </div>
       </fieldset>
     </div>
     <div class="product-form__wrapper">
       <small class="product-form__legend">*Поля обязательны для заполнения</small>
-      <div class="product-form__button">
-        <button class="button" type="submit">Отправить заказ</button>
-      </div>
+      <button class="product-form__button button" type="submit">Отправить заказ</button>
     </div>
   </form>
 </main>
@@ -188,6 +210,8 @@
     </div>
   </div>
 </footer>
+
+<script src="js/main-navigation.js"></script>
 
 </body>
 

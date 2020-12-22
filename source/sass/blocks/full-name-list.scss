@@ -1,0 +1,48 @@
+.full-name-list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 12px;
+  margin-bottom: 0;
+}
+
+.full-name-list__item-input {
+  display: block;
+  padding-bottom: 13px;
+  margin-bottom: 23px;
+  width: 98.5%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid $basic-black;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 18px;
+  color: $light-black;
+
+  &::placeholder {
+    color: $black-light-3;
+    font-family: $font, "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $mail-link;
+  }
+
+  &:active {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid $mail-link;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 18px;
+    color: $light-black;
+  }
+}
+
+.full-name-list__item-label {
+  display: block;
+  margin-bottom: 13px;
+}
