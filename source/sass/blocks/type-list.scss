@@ -7,16 +7,15 @@
     padding-top: 0;
     padding-left: 80px;
     margin: 0;
+    line-height: 12px;
   }
 }
 
 .type-list__item {
   margin-bottom: 24px;
 
-  input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
   }
 
   label {
@@ -35,6 +34,13 @@
       border: 2px solid $light-black;
       border-radius: 50%;
       box-sizing: border-box;
+
+      @media (min-width: $tablet-width) {
+        top: -19px;
+        left: -77px;
+        width: 49px;
+        height: 49px;
+      }
     }
   }
 
@@ -47,6 +53,13 @@
     width: 16px;
     border-radius: 50%;
     background-color: $mail-link;
+
+    @media (min-width: $tablet-width) {
+      top: -4px;
+      left: -62px;
+      height: 20px;
+      width: 20px;
+    }
   }
 
   input:hover + label::before,
@@ -61,6 +74,13 @@
     border-color: $mail-link;
     border-radius: 50%;
     box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      top: -19px;
+      left: -77px;
+      width: 49px;
+      height: 49px;
+    }
   }
 
   input:active + label::before {
@@ -74,6 +94,13 @@
     border-color: $black-light-3;
     border-radius: 50%;
     box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      top: -19px;
+      left: -77px;
+      width: 49px;
+      height: 49px;
+    }
   }
 
   &:first-child {
@@ -87,6 +114,13 @@
       border: 2px solid $light-black;
       border-radius: 50%;
       box-sizing: border-box;
+
+      @media (min-width: $tablet-width) {
+        top: -19px;
+        left: -77px;
+        width: 49px;
+        height: 49px;
+      }
     }
 
     input:checked + label::after {
@@ -98,6 +132,13 @@
       width: 16px;
       border-radius: 50%;
       background-color: $mail-link;
+
+      @media (min-width: $tablet-width) {
+        top: -4px;
+        left: -62px;
+        height: 20px;
+        width: 20px;
+      }
     }
 
     input:hover + label::before,
@@ -112,6 +153,13 @@
       border-color: $mail-link;
       border-radius: 50%;
       box-sizing: border-box;
+
+      @media (min-width: $tablet-width) {
+        top: -19px;
+        left: -77px;
+        width: 49px;
+        height: 49px;
+      }
     }
 
     input:active + label::before {
@@ -125,6 +173,13 @@
       border-color: $black-light-3;
       border-radius: 50%;
       box-sizing: border-box;
+
+      @media (min-width: $tablet-width) {
+        top: -19px;
+        left: -77px;
+        width: 49px;
+        height: 49px;
+      }
     }
   }
 }

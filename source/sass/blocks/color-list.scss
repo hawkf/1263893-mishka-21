@@ -7,12 +7,17 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 0;
+    padding-left: 82px;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 80px;
   }
 }
 
@@ -21,12 +26,6 @@
 
   &:last-of-type {
     margin-bottom: 0;
-  }
-
-  input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
   }
 
   label {
@@ -43,6 +42,17 @@
       width: 34px;
       height: 34px;
       border: 2px solid $light-black;
+
+      @media (min-width: $tablet-width) {
+        left: -82px;
+        top: -17px;
+        width: 48px;
+        height: 48px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: -20px;
+      }
     }
   }
 
@@ -55,6 +65,13 @@
     width: 34px;
     height: 34px;
     border: 2px solid $mail-link;
+
+    @media (min-width: $tablet-width) {
+      left: -82px;
+      top: -17px;
+      width: 48px;
+      height: 48px;
+    }
   }
 
   input:active + label::before {
@@ -65,6 +82,13 @@
     width: 34px;
     height: 34px;
     border: 2px solid $black-light-3;
+
+    @media (min-width: $tablet-width) {
+      left: -82px;
+      top: -17px;
+      width: 48px;
+      height: 48px;
+    }
   }
 
   input:checked + label::after {
@@ -77,17 +101,29 @@
     border-bottom: 1px solid $basic-black;
     border-left: 1px solid $basic-black;
     transform: rotate(-45deg);
+
+    @media (min-width: $tablet-width) {
+      left: -70px;
+      top: -3px;
+      width: 26px;
+      height: 14px;
+      border-width: 2px;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 58px;
+
     &:nth-of-type(even) {
       grid-column: 2/3;
+      margin-left: 52px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &:nth-of-type(even) {
       grid-column: auto;
+      margin-left: 0;
     }
   }
 }

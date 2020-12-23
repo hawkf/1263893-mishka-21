@@ -4,6 +4,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 38px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 84px;
   }
 
   fieldset {
@@ -20,17 +25,6 @@
   }
 }
 
-.product-form__fields {
-  @media (min-width: $tablet-width) {
-    &:nth-of-type(3),
-    &:nth-of-type(5),
-    &:nth-of-type(6) {
-      background-color: $light-grey;
-      background-size: cover;
-    }
-  }
-}
-
 .product-form__wrapper {
   width: 260px;
   margin: 0 auto;
@@ -40,6 +34,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     width: 668px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,6 +57,10 @@
     line-height: 30px;
     margin-bottom: 63px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
 }
 
 .product-form__fields-name {
@@ -75,9 +74,9 @@
   text-transform: uppercase;
   color: $basic-green;
 
-  @media (min-width: $tablet-width) {
-    display: block;
-    margin-top: 40px;
+  @media (min-width: $desktop-width) {
+
+    margin-left: 60px;
   }
 
   &::after {
@@ -103,13 +102,15 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
     grid-row: 1/2;
+    margin-top: 38px;
+    margin-bottom: 0;
     text-align: right;
     font-size: 17px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/6;
+    grid-column: 2/3;
   }
 }
 
@@ -122,7 +123,8 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/3;
     grid-row: 1/2;
-    text-align: left;
+    width: 230px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -132,24 +134,88 @@
 
 .product-form__type {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+
+    .product-form__wrapper {
+      padding-top: 18px;
+    }
+  }
 }
 
 .product-form__color {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $light-grey;
+
+    .product-form__wrapper {
+      padding-top: 67px;
+    }
+  }
 }
 
 .product-form__full-name {
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    .product-form__wrapper {
+      padding-top: 47px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .product-form__wrapper {
+      padding-top: 44px;
+    }
+  }
+}
+
+.product-form__telephone {
+  @media (min-width: $tablet-width) {
+    background-color: $light-grey;
+
+    .product-form__wrapper {
+      padding-top: 60px;
+    }
+
+    .product-form__fields-name {
+      margin-top: 6px;
+    }
+  }
 }
 
 .product-form__telephone-number {
-  padding-top: 21px;
+  padding-top: 11px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-right: 13px;
+  }
+}
+
+.product-form__email {
+  @media (min-width: $tablet-width) {
+    background-color: $light-grey;
+    margin-bottom: 50px;
+
+    .product-form__fields-name {
+      margin-top: 6px;
+    }
+  }
 }
 
 .product-form__email-adress {
-  padding-top: 23px;
+  padding-top: 15px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-right: 13px;
+    margin-bottom: 50px;
+  }
 }
 
 .product-form__telephone-number-input,
@@ -159,7 +225,12 @@
   border: none;
   outline: none;
   border-bottom: 2px solid $basic-black;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
+  background-color: $transperent;
+  font-family: $font, "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 18px;
 
   &::placeholder {
     color: $black-light-3;
@@ -167,16 +238,31 @@
     font-weight: normal;
     font-size: 17px;
     line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 
   &:hover,
   &:focus {
     border-color: $mail-link;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+    padding-bottom: 13px;
+  }
 }
 
 .product-form__email-adress-input {
-  padding-bottom: 15px;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 12px;
+  }
 }
 
 .product-form__telephone-number-label {
@@ -189,6 +275,14 @@
     top: -40px;
     fill: $basic-black;
     opacity: 0.2;
+
+    @media (min-width: $tablet-width) {
+      right: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -5px;
+    }
   }
 }
 
@@ -202,14 +296,36 @@
     top: -36px;
     fill: $basic-black;
     opacity: 0.2;
+
+    @media (min-width: $tablet-width) {
+      right: 9px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -10px;
+    }
   }
 }
 
 .product-form__telephone-number-input:active + .product-form__telephone-number-label,
-.product-form__email-adress-input:active + .product-form__email-adress-label {
+.product-form__email-adress-input:active + .product-form__email-adress-label,
+.product-form__telephone-number-input:hover + .product-form__telephone-number-label,
+.product-form__email-adress-input:hover + .product-form__email-adress-label,
+.product-form__telephone-number-input:focus + .product-form__telephone-number-label,
+.product-form__email-adress-input:focus + .product-form__email-adress-label {
   svg {
     fill: $mail-link;
     opacity: 1;
+  }
+}
+
+.product-form__additionally {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 15px;
+
+    .product-form__fields-name {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -229,6 +345,20 @@
       font-weight: normal;
       font-size: 17px;
       line-height: 18px;
+
+      @media (min-width: $tablet-width) {
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 18px;
+      }
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
   }
 }
