@@ -1,0 +1,185 @@
+.type-list {
+  list-style: none;
+  padding-top: 17px;
+  padding-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 80px;
+    margin: 0;
+    line-height: 12px;
+  }
+}
+
+.type-list__item {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -60px;
+      top: -10px;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $light-black;
+      border-radius: 50%;
+      box-sizing: border-box;
+
+      @media (min-width: $tablet-width) {
+        top: -19px;
+        left: -77px;
+        width: 49px;
+        height: 49px;
+      }
+    }
+  }
+
+  input:checked + label::after {
+    content: "";
+    position: absolute;
+    left: -48px;
+    top: 2px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: $mail-link;
+
+    @media (min-width: $tablet-width) {
+      top: -4px;
+      left: -62px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  input:hover + label::before,
+  input:focus + label::before {
+    content: "";
+    position: absolute;
+    left: -60px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $light-black;
+    border-color: $mail-link;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      top: -19px;
+      left: -77px;
+      width: 49px;
+      height: 49px;
+    }
+  }
+
+  input:active + label::before {
+    content: "";
+    position: absolute;
+    left: -60px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $light-black;
+    border-color: $black-light-3;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      top: -19px;
+      left: -77px;
+      width: 49px;
+      height: 49px;
+    }
+  }
+
+  &:first-child {
+    label::before {
+      content: "";
+      position: absolute;
+      left: -60px;
+      top: -4px;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $light-black;
+      border-radius: 50%;
+      box-sizing: border-box;
+
+      @media (min-width: $tablet-width) {
+        top: -19px;
+        left: -77px;
+        width: 49px;
+        height: 49px;
+      }
+    }
+
+    input:checked + label::after {
+      content: "";
+      position: absolute;
+      left: -48px;
+      top: 8px;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background-color: $mail-link;
+
+      @media (min-width: $tablet-width) {
+        top: -4px;
+        left: -62px;
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    input:hover + label::before,
+    input:focus + label::before {
+      content: "";
+      position: absolute;
+      left: -60px;
+      top: -4px;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $light-black;
+      border-color: $mail-link;
+      border-radius: 50%;
+      box-sizing: border-box;
+
+      @media (min-width: $tablet-width) {
+        top: -19px;
+        left: -77px;
+        width: 49px;
+        height: 49px;
+      }
+    }
+
+    input:active + label::before {
+      content: "";
+      position: absolute;
+      left: -60px;
+      top: -4px;
+      width: 40px;
+      height: 40px;
+      border: 2px solid $light-black;
+      border-color: $black-light-3;
+      border-radius: 50%;
+      box-sizing: border-box;
+
+      @media (min-width: $tablet-width) {
+        top: -19px;
+        left: -77px;
+        width: 49px;
+        height: 49px;
+      }
+    }
+  }
+}
