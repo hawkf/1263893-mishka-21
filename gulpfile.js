@@ -21,30 +21,18 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
-    .pipe(sourcemap.write("."))
+    .pipe(sourcemap.write())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
-
-const copycss = () => {
-  return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([autoprefixer()]))
-    .pipe(rename("style.css"))
-    .pipe(gulp.dest("build/css"))
-    .pipe(sync.stream());
-}
-
-exports.copycss = copycss;
 
 //HTML
 
@@ -155,7 +143,6 @@ const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
-    copycss,
     html,
     scripts,
     sprite,
@@ -171,7 +158,6 @@ exports.default = gulp.series(
     clean,
     gulp.parallel(
       styles,
-      copycss,
       html,
       scripts,
       sprite,
