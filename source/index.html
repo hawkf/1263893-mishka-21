@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -104,6 +104,9 @@
       </table>
       <div class="product-week__image">
         <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/triple-set-mobile.webp 1x, img/triple-set-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.png 1x, img/triple-set-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/triple-set-tablet.png 1x, img/triple-set-tablet@2x.png 2x">
           <img src="img/triple-set-mobile.png" srcset="img/triple-set-mobile@2x.png 2x" alt="Фото товара недели">
@@ -240,7 +243,7 @@
   </div>
 </footer>
 
-<script src="js/main-navigation.js"></script>
+<script src="js/main-navigation.min.js"></script>
 
 </body>
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -68,6 +68,9 @@
         <a class="catalog-list__item-link" href="#">
           <div class="catalog-list__item-image">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.png 1x, img/photo-1-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/photo-1-tablet.png 1x, img/photo-1-tablet@2x.png 2x">
               <img src="img/photo-1-mobile.png" srcset="img/photo-1-mobile@2x.png 2x" alt="Фото товара">
@@ -89,6 +92,9 @@
         <a class="catalog-list__item-link" href="#">
           <div class="catalog-list__item-image">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.png 1x, img/photo-2-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/photo-2-tablet.png 1x, img/photo-2-tablet@2x.png 2x">
               <img src="img/photo-2-mobile.png" srcset="img/photo-2-mobile@2x.png 2x" alt="Фото товара">
@@ -110,6 +116,9 @@
         <a class="catalog-list__item-link" href="#">
           <div class="catalog-list__item-image">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.png 1x, img/photo-3-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/photo-3-tablet.png 1x, img/photo-3-tablet@2x.png 2x">
               <img src="img/photo-3-mobile.png" srcset="img/photo-3-mobile@2x.png 2x" alt="Фото товара">
@@ -134,6 +143,9 @@
       <h2 class="production-process__title">Процесс <br>производства</h2>
       <div class="production-process__watch">
         <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/video-desktop.png 1x, img/video-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/video-tablet.png 1x, img/video-tablet@2x.png 2x">
           <img class="production-process__video" src="img/video-mobile.png" srcset="img/video-mobile@2x.png 2x" alt="Видео производства товара">
@@ -188,7 +200,7 @@
   </div>
 </footer>
 
-<script src="js/main-navigation.js"></script>
+<script src="js/main-navigation.min.js"></script>
 
 </body>
 
