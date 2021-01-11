@@ -346,11 +346,21 @@
   margin-bottom: 10px;
 
   textarea {
+    resize: none;
     width: 100%;
     border: 2px solid $light-black;
     padding-top: 15px;
     padding-left: 15px;
     box-sizing: border-box;
+    font-family: $font, "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      line-height: 18px;
+    }
 
     &::placeholder {
       font-family: $font, "Arial", sans-serif;
@@ -363,6 +373,13 @@
         font-size: 19px;
         line-height: 18px;
       }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 2px solid $mail-link;
+      outline: none;
     }
   }
 
