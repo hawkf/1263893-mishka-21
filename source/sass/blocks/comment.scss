@@ -205,6 +205,7 @@
 
 .comment__navigation {
   display: flex;
+  z-index: 3;
 
   svg {
     width: 50px;
