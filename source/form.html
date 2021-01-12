@@ -22,7 +22,7 @@
         <use xlink:href="/img/icons/sprite.svg#mishka-logo-mobile"></use>
       </svg>
     </a>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -138,7 +138,7 @@
     <fieldset class="product-form__fields product-form__telephone">
       <legend class="visually-hidden">Номер телефона</legend>
       <div class="product-form__wrapper">
-        <span class="product-form__fields-name">Тел</span>
+        <label class="product-form__fields-name" for="filter-phone-number">Тел</label>
         <div class="product-form__telephone-number">
           <input class="product-form__telephone-number-input" type="tel" name="phone-number" id="filter-phone-number" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           <label class="product-form__telephone-number-label" for="filter-phone-number">
@@ -152,7 +152,7 @@
     <fieldset class="product-form__fields product-form__email">
       <legend class="visually-hidden">Электронная почта</legend>
       <div class="product-form__wrapper">
-        <div class="product-form__fields-name"><span>E-mail</span></div>
+        <label class="product-form__fields-name" for="filter-email"><span>E-mail</span></label>
         <div class="product-form__email-adress">
           <input class="product-form__email-adress-input" type="email" name="email" id="filter-email" required placeholder="Ваш Email*">
           <label class="product-form__email-adress-label" for="filter-email">
@@ -166,7 +166,7 @@
       <fieldset class="product-form__fields product-form__additionally">
         <legend class="visually-hidden">Дополнительная информация</legend>
         <div class="product-form__wrapper">
-          <span class="product-form__fields-name">Доп</span>
+          <label class="product-form__fields-name" for="filter-additionally-information">Доп</label>
         <div class="product-form__additionally-information">
           <textarea name="additionally-information" id="filter-additionally-information" rows="8"
                     placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -181,11 +181,11 @@
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <div class="page-footer__logo page-footer__logo--hide">
+    <a class="page-footer__logo page-footer__logo--hide" href="https://htmlacademy.ru/intensive/adaptive">
       <svg aria-label="Логотип" width="102" height="34">
         <use xlink:href="/img/icons/sprite.svg#logo-footer"></use>
       </svg>
-    </div>
+    </a>
     <div class="page-footer__social social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <a class="social__link" href="#">
@@ -206,7 +206,7 @@
     </div>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg aria-label="Логотип разаработчиков сайта" width="45" height="40">
           <use xlink:href="/img/icons/sprite.svg#htmlacademy"></use>
         </svg>

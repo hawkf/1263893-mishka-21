@@ -76,8 +76,8 @@
   hyphens: none;
 
   @media (min-width: $desktop-width) {
-
     margin-left: 60px;
+    width: 100px;
   }
 
   &::after {
