@@ -33,6 +33,7 @@
     display: block;
     cursor: pointer;
     user-select: none;
+    width: min-content;
 
     &::before {
       content: "";
